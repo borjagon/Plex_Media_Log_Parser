@@ -1,5 +1,7 @@
-#Borja González Rivero  March 2016
+
 #!/usr/bin/env python
+#Borja González Rivero March 2016
+
 
 from sys import argv
 import operator
@@ -43,17 +45,16 @@ def Get_Time_In_Seconds(first_time, time):
 	
 	return time
 		
-#function returns window size according to user bit rate 
+# function returns window size according to user bit rate 
 #Change bit rate range values to suit bandwidth demand
-
 def Get_Size(bitrate):
 
 	size = 0
 	
-	if (int(bitrate) > 4100):
+	if (int(bitrate) > 3900):
 		size = 2
 		
-	elif (int(bitrate) > 1600 and int(bitrate) < 4100):
+	elif (int(bitrate) > 1600 and int(bitrate) < 3900):
 		size = 4
 		
 	elif (int(bitrate) > 400 and int(bitrate) < 1600):
