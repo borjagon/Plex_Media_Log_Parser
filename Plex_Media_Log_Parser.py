@@ -51,10 +51,10 @@ def Get_Size(bitrate):
 
 	size = 0
 	
-	if (int(bitrate) > 3000):
+	if (int(bitrate) > 3100):
 		size = 2
 		
-	elif (int(bitrate) > 1600 and int(bitrate) < 3000):
+	elif (int(bitrate) > 1600 and int(bitrate) < 3100):
 		size = 4
 		
 	elif (int(bitrate) > 400 and int(bitrate) < 1600):
